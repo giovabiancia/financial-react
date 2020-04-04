@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+.gray {
+  position: relative;
+  padding: 10px;
+ 
+  border: 2px solid lightgray;
+}
+
+.giallo{
+  color: yellow;
+}
+
+.verde{
+  color: green;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.nomestock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #CCC;
+  margin: 5px;
+  color: #000;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+.nomestock p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.nomestock:hover{
+  background-color: rgb(90, 86, 86);
+
+}
+.pointer{
+  cursor: pointer;
+}
+
+.closebtn{
+  position: absolute;
+  top:5px;
+  right:10px;
+  font-size: 15px;
+  z-index:999;
+  
+}
+
+.bs-switch{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+
+}
+
+[type="checkbox"]:checked, [type="checkbox"]:not(:checked){
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bs-switch input{
+  display: none;
+}
+
+input[type="checkbox"], input[type="radio"]{
+  box-sizing: border-box;
+  padding:0
+}
+
+.bs-switch input:checked + .slider{
+  background-color: lightseagreen;
+}
+
+.bs-switch .slider.round{
+  -webkit-border-radius: 34px;
+  border-radius: 34px;
+}
+
+.bs-switcher .slider{
+  position: absolute;
+  cursor: pointer;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  background-color: #CCC;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.bs-switch .slider.round::before{
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.bs-switch .slider::before{
+  position: absolute;
+  content:'';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: gray;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+
+}
+.bs-switch input:checked + .slider::before{
+  -webkit-transfrom: translateX(26px);
+  -ms-transfrom: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+
+
